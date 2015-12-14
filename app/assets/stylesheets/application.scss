@@ -23,6 +23,7 @@
  	background-color: #ff9933;
  }
 
+
  .row {
  	margin: 0;
 	border: 0;
@@ -34,4 +35,29 @@
 	border: 0;
 	padding: 0;
  }
+
+ .navbar {
+ 	background-color: #ff9933;
+ 	border: 0px;
+ }
+
+ .navbar li a {
+ 	color: #ff9933;
+ }
+
+ .caticon {
+ 	height: 40px;
+ 	display: inline;
+ }
+
+ .dropdown-menu {
+ 	padding: 15px;
+ }
+
+/*.li a:hover {
+	background-color: #e63900;
+}*/
+ 
+
+
 
