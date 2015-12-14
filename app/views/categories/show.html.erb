@@ -5,5 +5,20 @@
   <%= @category.name %>
 </p>
 
-<%= link_to 'Edit', edit_category_path(@category) %> |
-<%= link_to 'Back', categories_path %>
+<div>
+	<% @category.items.each do |item| %>
+
+		<p> <%= item.name %> </p>
+		<p> <%= item.description %> </p>
+		<p> <%= item.condition %>
+		<p><%= item.price %></p>
+		<p> <%= image_tag item.image %></p>
+		<p> <%= item.name %></p>
+		<p> <%= item.street_address %></p>
+		<p> <%= link_to 'Show', item %> </p>
+	<%end%>
+</div>
+
+<!--<#%= link_to 'Edit', edit_category_path(@category) %>-->
+
+<!--<%= link_to 'Back', categories_path %>-->
