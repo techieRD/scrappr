@@ -23,8 +23,8 @@
         <td><%= item.description %></td>
         <td><%= item.condition %></td>
         <td><%= item.price %></td>
-        <td><%= item.image %></td>
-        <td><%= item.category_id %></td>
+        <td><%= image_tag item.image %></td>
+        <td><%= item.name %></td>
         <td><%= item.street_address %></td>
         <td><%= link_to 'Show', item %></td>
         <td><%= link_to 'Edit', edit_item_path(item) %></td>
