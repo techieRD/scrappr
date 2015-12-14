@@ -34,6 +34,7 @@
   <div class="field">
     <%= f.label :category_id %><br>
     <%= f.collection_select :category_id,Category.all,:id,:name%>
+    <!--<#%= f.collection_select :category_id, ['Electronics', 'Furniture', 'Clothing', 'Misc'], :prompt => 'Select One' %>!-->
   </div>
   <div class="field">
     <%= f.label :street_address %><br>
