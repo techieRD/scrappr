@@ -31,32 +31,32 @@
 						<ul class="dropdown-menu">
 							<li>
 								<div class="row">
-									<%= image_tag "art.svg", class: "caticon" %><a href="categories/2">Art</a>
+									<%= image_tag "art.svg", class: "caticon" %><%= link_to 'Art', category_path(id: 2) %>
 								</div>
 							</li>
 							<li>
 								<div class= "row">
-									<%= image_tag "appliances.svg", class: "caticon" %><a href="categories/1">Appliances</a>
+									<%= image_tag "appliances.svg", class: "caticon" %><%= link_to 'Appliances', category_path(id: 1) %>
 								</div>
 							</li>
 							<li>
 								<div class= "row">
-									<%= image_tag "clothes.svg", class: "caticon" %><a href="categories/3">Clothes</a>
+									<%= image_tag "clothes.svg", class: "caticon" %><%= link_to 'Clothes', category_path(id: 3) %>
 								</div>
 							</li>
 							<li>
 								<div class= "row">
-									<%= image_tag "electronics.svg", class: "caticon" %><a href="categories/4">Electronics</a>
+									<%= image_tag "electronics.svg", class: "caticon" %><%= link_to 'Electronics', category_path(id: 4) %>
 								</div>
 							</li>
 							<li>
 								<div class= "row">
-									<%= image_tag "furniture.svg", class: "caticon" %><a href="categories/5">Furniture</a>
+									<%= image_tag "furniture.svg", class: "caticon" %><%= link_to 'Furniture', category_path(id: 5) %>
 								</div>
 							</li>
 							<li>
 								<div class= "row">
-									<%= image_tag "misc.svg", class: "caticon" %><a href="categories/6">Miscellaneous</a>
+									<%= image_tag "misc.svg", class: "caticon" %><%= link_to 'Misc.', category_path(id: 6) %>
 								</div>
 							</li>
 						</ul>
