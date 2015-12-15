@@ -66,6 +66,7 @@
 		    		<% if user_signed_in? %>
 			    		<%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
 			    		<%= link_to "Your Items", your_items_path, class: "btn btn-default" %>
+			    		<%= link_to "New Listing", new_item_path, class: "btn btn-success" %>
 		    		<% end %>
 		    	</div>
 		    </div>
