@@ -22,10 +22,14 @@ class ItemsController < ApplicationController
   def edit
   end
 
+  # USER ITEMS
+
+
   # POST /items
   # POST /items.json
   def create
     @item = Item.new(item_params)
+    @item.user = current_user
 
     respond_to do |format|
       if @item.save
@@ -70,6 +74,6 @@ class ItemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_params #permit but no require?
-      params.require(:item).permit(:name, :description, :condition, :price, :image, :category_id, :street_address)
+      params.require(:item).permit(:name, :description, :condition, :price, :image, :category_id, :street_address, :item_owner_id)
     end
 end
