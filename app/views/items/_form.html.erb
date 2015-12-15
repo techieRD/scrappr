@@ -40,6 +40,9 @@
     <%= f.label :street_address %><br>
     <%= f.text_field :street_address %>
   </div>
+  <div class= "invisible">
+      <%= f.number_field :user_id, value: current_user.id %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
