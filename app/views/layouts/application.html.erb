@@ -3,10 +3,10 @@
 <head>
 	<title>Scrappr</title>
 
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-
 </head>
 <body>
 
@@ -61,6 +61,13 @@
 					</li>
 				</ul>
 			</div>
+			<div class="container">
+		    	<div class="pull-right">
+		    		<% if user_signed_in? %>
+			    		<%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-danger" %>
+		    		<% end %>
+		    	</div>
+		    </div>
 		</div>
 	</nav>
 
