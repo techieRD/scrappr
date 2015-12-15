@@ -25,41 +25,9 @@
 				<a class="logo" href="/home/index/">SCRAPPR</a>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-left">
-					<li class="dropdown">
-						<a href="#" class="tog" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CATEGORIES<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li>
-								<div class="row catlink">
-									<%= image_tag "art.svg", class: "caticon" %><%= link_to 'Art', category_path(id: 2) %>
-								</div>
-							</li>
-							<li>
-								<div class= "row catlink">
-									<%= image_tag "appliances.svg", class: "caticon" %><%= link_to 'Appliances', category_path(id: 1) %>
-								</div>
-							</li>
-							<li>
-								<div class= "row catlink">
-									<%= image_tag "clothes.svg", class: "caticon" %><%= link_to 'Clothes', category_path(id: 3) %>
-								</div>
-							</li>
-							<li>
-								<div class= "row catlink">
-									<%= image_tag "electronics.svg", class: "caticon" %><%= link_to 'Electronics', category_path(id: 4) %>
-								</div>
-							</li>
-							<li>
-								<div class= "row catlink">
-									<%= image_tag "furniture.svg", class: "caticon" %><%= link_to 'Furniture', category_path(id: 5) %>
-								</div>
-							</li>
-							<li>
-								<div class= "row catlink">
-									<%= image_tag "misc.svg", class: "caticon" %><%= link_to 'Misc.', category_path(id: 6) %>
-								</div>
-							</li>
-						</ul>
+				<ul class="nav navbar-left">
+					<li>
+						<%= link_to "CATEGORIES", categories_path, class: "sign" %>
 					</li>
 				</ul>
 				<ul class="nav navbar-right">
