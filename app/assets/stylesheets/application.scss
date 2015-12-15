@@ -117,7 +117,27 @@ a:hover {
 	display: none;
 }
 
- 
+ .welcometitle {
+ 	font-size: 6em;
+ 	text-align: center;
+ }
+
+ .subtitle {
+ 	font-size: 3em;
+ 	text-align: center;
+ }
+
+ .homelogo {
+ 	margin: 0px;
+ 	max-height: 30em;
+
+ }
+
+ hr {
+ 	height: 3px !important;
+ 	background-color: #ffffff;
+ }
+
  /*h1 {
  	font-family: ;
  	font-size: ; 
