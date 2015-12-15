@@ -20,9 +20,9 @@
 
 
  body {
- 	background-color: #ff9933;
- }
-
+ 	background-color: #ff9900;
+    font-family: 'Open Sans', sans-serif;
+}
 
  .row {
  	margin: 0;
@@ -36,13 +36,29 @@
 	padding: 0;
  }
 
+
  .navbar {
- 	background-color: #ff9933;
+ 	background-color: #ff9900;
  	border: 0px;
  }
 
+.navbar-nav > li > a {
+	color: #ffffff !important;
+}
+
+ .logo {
+ 	color: #ffffff;
+ 	font-size: 2em;
+ 	padding: 2px;
+ }
+
+.logo:hover {
+	text-decoration: none;
+	color: #b30000;
+}
+
  .navbar li a {
- 	color: #ff9933;
+ 	color: #ff9900;
  }
 
  .caticon {
@@ -54,11 +70,49 @@
  	padding: 10px;
  	background-color: #ffffff;
  	border: 0px;
+ 	font-family: 'Open Sans', sans-serif;
  }
 
-/*.li a:hover {
+ .tog {
+ 	color: #ffffff;
+ }
+
+.li a:hover a:link {
 	background-color: #e63900;
-}*/
+}
+
+.catlink:hover {
+	background-color: #f2f2f2;
+}
+
+.titlefont {
+	font-size: 4em;
+}
+
+.catname {
+	font-size: 4em;
+	text-decoration: none;
+	color: white;
+}
+
+.catname:hover {
+	text-decoration: none;
+	color: #b30000 !important;
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #b30000 !important;
+}
+
+.itempic {
+	max-height: 200px;
+}
+
  
  /*h1 {
  	font-family: ;
