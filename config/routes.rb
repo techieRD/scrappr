@@ -2,9 +2,17 @@ Rails.application.routes.draw do
   get 'home/index'
 
   devise_for :users
+  
+   devise_for :users
   resources :items
   resources :categories
 
+  
+  get 'home/index'
+
+  get 'category_items' => 'categories#category_items'
+
+ 
  root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
