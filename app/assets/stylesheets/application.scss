@@ -77,7 +77,12 @@
  	color: #ffffff;
  }
 
-.li a:hover a:link {
+ .invisible {
+ 	display: none;
+ }
+
+/*.li a:hover {
+>>>>>>> 1a443cc88f767db232aa44e26874119bae27ed57
 	background-color: #e63900;
 }
 
