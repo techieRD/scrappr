@@ -8,7 +8,8 @@ Rails.application.routes.draw do
   get 'home/index'
 
   get 'category_items' => 'categories#category_items'
-
+  get 'your_items' => 'items#your_items'
+  get 'user_items' => 'items#user_items'
  
  root 'home#index'
 
