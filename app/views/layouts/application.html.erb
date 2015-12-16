@@ -35,9 +35,9 @@
 					<%= link_to "ABOUT", home_about_path, class: "sign" %>
 				</li>
 					<% if user_signed_in? %>
-			    		<li><%= link_to "SIGN OUT", destroy_user_session_path, method: :delete, class: "sign" %></li>
+			    
 			    		<li><%= link_to "YOUR ITEMS", your_items_path, class: "sign" %></li>
-			    		<li><%= link_to "NEW LISTING", new_item_path, class: "sign" %></li>
+			    		<li><%= link_to "SIGN OUT", destroy_user_session_path, method: :delete, class: "sign" %></li>
 		    		<% end %>
 				</ul>
 				
