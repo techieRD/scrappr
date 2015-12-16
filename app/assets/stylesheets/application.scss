@@ -73,6 +73,10 @@
  	font-family: 'Open Sans', sans-serif;
  }
 
+ .invisible {
+ 	display: none;
+ }
+
  .tog {
  	color: #ffffff;
  }
@@ -109,8 +113,11 @@ a:hover {
 	color: #b30000 !important;
 }
 
-.itempic {
-	max-height: 200px;
+.itempic  {
+
+	max-width: 100%;
+	margin: auto;
+	margin-bottom: 10px;
 }
 
 .invisible {
@@ -154,10 +161,14 @@ a:hover {
  	margin-top: 0px;
  }
 
- /*h1 {
- 	font-family: ;
- 	font-size: ; 
- }*/
+ .contact {
+ 	color: #b30000;
+ }
+
+ .panel {
+ 	margin: 5px;
+ }
+
 
 
 

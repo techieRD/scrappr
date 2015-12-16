@@ -14,11 +14,10 @@
 			<%= number_to_currency item.price %>
 		</div>
 		<div class="panel-body">
-			<img src=" <%=item.image %>" class= "itempic">
-			<p><strong>CONDITION: </strong><%= item.condition.upcase %></p>
-			<p><strong>DESCRIPTION: </strong><%= item.description.upcase %></p>
-			<p><strong>STREET ADDRESS: </strong><%= item.street_address.upcase %></p>
-			<p><strong>CREATED AT: </strong><%= item.created_at %></p>
+			<div>
+				<img src=" <%=item.image %>" class= "itempic">
+			</div>
+			<p><%= link_to "MORE INFO", item_path, class: "contact" %></p>
 		</div>
 		
 	</div>
