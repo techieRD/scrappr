@@ -6,6 +6,4 @@ class User < ActiveRecord::Base
 
          has_many :items
 
-         validates :username, presence: true, uniqueness: true
-
 end
