@@ -113,8 +113,11 @@ a:hover {
 	color: #b30000 !important;
 }
 
-.itempic {
-	max-height: 200px;
+.itempic  {
+
+	max-width: 100%;
+	margin: auto;
+	margin-bottom: 10px;
 }
 
 .invisible {
@@ -156,6 +159,14 @@ a:hover {
  	font-size: 1em !important;
  	display: inline-block;
  	margin-top: 0px;
+ }
+
+ .contact {
+ 	color: #b30000;
+ }
+
+ .panel {
+ 	margin: 5px;
  }
 
 
