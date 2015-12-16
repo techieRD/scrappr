@@ -40,13 +40,8 @@
     <%= f.label :street_address %><br>
     <%= f.text_field :street_address %>
   </div>
-<<<<<<< HEAD
-  <div class="invisible">
-    <%= f.number_field :user_id, current_user.id %>
-=======
   <div class= "invisible">
       <%= f.number_field :user_id, value: current_user.id %>
->>>>>>> origin/backend
   </div>
   <div class="actions">
     <%= f.submit %>

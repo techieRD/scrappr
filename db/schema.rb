@@ -11,11 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20151215151007) do
-=======
 ActiveRecord::Schema.define(version: 20151215170003) do
->>>>>>> origin/backend
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -31,11 +27,6 @@ ActiveRecord::Schema.define(version: 20151215170003) do
     t.string   "image"
     t.integer  "category_id"
     t.string   "street_address"
-<<<<<<< HEAD
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
-    t.integer  "user_id"
-=======
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.integer  "user_id"
@@ -43,7 +34,6 @@ ActiveRecord::Schema.define(version: 20151215170003) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
->>>>>>> origin/backend
   end
 
   create_table "users", force: :cascade do |t|
