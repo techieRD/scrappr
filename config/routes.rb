@@ -8,8 +8,10 @@ Rails.application.routes.draw do
   get 'home/index'
 
   get 'category_items' => 'categories#category_items'
+  get 'your_items' => 'items#your_items'
+  get 'user_items' => 'items#user_items'
 
- 
+ get 'home/about'
  root 'home#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

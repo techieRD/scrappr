@@ -13,6 +13,14 @@ class ItemsController < ApplicationController
   @item = Item.find(params[:id])
   end
 
+  def your_items
+  
+  end
+
+  def user_items
+
+  end
+
   # GET /items/new
   def new
     @item = Item.new

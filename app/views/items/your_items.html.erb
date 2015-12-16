@@ -1,0 +1,19 @@
+<% current_user.items.each do |item| %>
+	<div class="col-md-12">
+		<div class="panel panel-success">
+			<div class="panel-heading">
+				<%= link_to item.name, item %>
+			</div>
+			<div class="panel-body">
+			 <p><span class="posted-at"><%= item.created_at.strftime('%m/%d/%Y at %l:%M%p') %></span><p>
+			 <p><%= link_to "Show", item %></p>
+			</div>
+			<div class="panel-footer">
+				<%= link_to 'Edit', edit_item_path(item), class: "btn btn-warning" %>
+				<%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+			</div>
+		</div>
+	</div>
+<% end %>
+
+<%= link_to "NEW LISTING", new_item_path, class: "sign" %>

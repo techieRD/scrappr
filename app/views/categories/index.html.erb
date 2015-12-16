@@ -1,29 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Categories!</h1>
+<h1 class="titlefont">CATEGORIES!</h1>
 
-<div class="row">
+<hr>
+
     <% @categories.each do |category| %>
-     <div class="col-sm-6 col-md-4">
-      <div class ="panel panel-default">
-        <div class="panel-heading">
-          <% category.name %>
-        </div>
-        <div class="panel-body">
-          <h4><%= category.name %></h4>
-          <br/>
-        </div>
-        <div class="panel-footer">
-          <%= link_to 'Show', category, class: "btn btn-primary"%>
-          <%= link_to 'Edit', edit_category_path(category), class: "btn btn-warning" %>
-          <%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
-        </div>
-      </div>
+     <div>
+          <h1 class="catname"><%= link_to category.name.upcase, category %></h1>
+      
     </div>
-    <% end %>
-</div>
+
+  <% end %>
+
+
 
 <br>
-<div class="p">
-      <%= link_to 'New Category', new_category_path %>
-</div>
