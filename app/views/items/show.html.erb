@@ -21,7 +21,7 @@
         <h3><strong>STREET ADDRESS:</strong>
           <%= @item.street_address.upcase %></h3>
           <div>
-            <a class="seller" href="<% @item.user.email %>">CONTACT SELLER</a>
+            <a class="seller" href="mailto:<% @item.user.email %>">CONTACT SELLER</a>
           </div>
       </div>
 
