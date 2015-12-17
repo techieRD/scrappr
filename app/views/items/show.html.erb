@@ -1,41 +1,36 @@
 <p id="notice"><%= notice %></p>
 
-<%= @item.user.email %>
-
 <p>
-  <strong>Name:</strong>
-  <%= @item.name %>
+  <h1 class="titlefont"><%= @item.name.upcase %></h1>
 </p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @item.description %>
-</p>
+<hr>
 
-<p>
-  <strong>Condition:</strong>
-  <%= @item.condition %>
-</p>
+<div class="panel col-md-12">
 
-<p>
-  <strong>Price:</strong>
-  <%= @item.price %>
-</p>
+    <div class="panel-body">
+      <div class="col-md-6">
+        <h3><%= number_to_currency @item.price %></h3>
 
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @item.image.url %>
-</p>
+        <h3><strong>CATEGORY:</strong>
+        <%= @item.name.upcase %></h3>
+        <h3><strong>CONDITION:</strong>
+        <%= @item.condition.upcase %></h3>
+        <h3><strong>DESCRIPTION:</strong>
+        <%= @item.description.upcase %></h3>
+        <h3><strong>STREET ADDRESS:</strong>
+          <%= @item.street_address.upcase %></h3>
+          <div>
+            <a class="seller" href="mailto:<% @item.user.email %>">CONTACT SELLER</a>
+          </div>
+      </div>
 
-<p>
-  <strong>Category:</strong>
-  <%= @item.name %>
-</p>
-
-<p>
-  <strong>Street address:</strong>
-  <%= @item.street_address %>
-</p>
+      <div class="col-md-6">
+        <%= image_tag @item.image.url, class: "itemshow" %>
+      </div>
+      
+    </div>
+</div>
 
 <strong>Map: </strong>
 <div style='width: 800px; padding-bottom: 2em; '>
