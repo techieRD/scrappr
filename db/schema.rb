@@ -34,6 +34,9 @@ ActiveRecord::Schema.define(version: 20151215170003) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.boolean  "gmaps"
   end
 
   create_table "users", force: :cascade do |t|
