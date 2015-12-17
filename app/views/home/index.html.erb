@@ -1,13 +1,20 @@
 
-<%= image_tag "Scrappr.svg", class: "homelogo img-responsive" %>
+<%= image_tag "scrappr.svg", class: "homelogo img-responsive" %>
 
 <hr>
 
 <p class="subtitle">ONE MAN'S TRASH</p>
 <p class="subtitle">IS ANOTHER MAN'S TREASURE</p>
 
+<!-- 
+<h1>Protomap</h1>
+<div id="map-container">
+  <div id="map-canvas"></div>
+</div>
 
+ -->
+<div style='width: 800px; padding-bottom: 2em; '>
+  <div id="map" style='width: 800px; height: 400px;'></div>
+</div>
 
-
-
-
+<%=yield%>

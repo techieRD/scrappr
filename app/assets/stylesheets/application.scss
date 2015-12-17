@@ -180,6 +180,20 @@ a:hover {
  }
 
 
+#map-container {
+   height: 400px !important;
+   border-radius: 16px 16px !important;
+   border-color: #fff !important;
+   border-style: solid !important;
+   box-shadow: 2px 2px 10px #B1B1B1 !important;
+   margin-top: 25px !important;
+   border-width: 7px !important;
+ }
+ #map-canvas {
+   height: 384px !important; 
+   width: 100% !important;
+ }
+
 
 
 

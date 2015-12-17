@@ -10,8 +10,16 @@ class ItemsController < ApplicationController
   # GET /items/1
   # GET /items/1.json
   def show
-  @item = Item.find(params[:id])
+      @item = Item.find(params[:id])
+
+
+      @hash = Gmaps4rails.build_markers(@item) do |item, marker|
+        marker.lat item.latitude
+        marker.lng item.longitude
+        marker.infowindow item.description
+      end
   end
+
 
   def your_items
   
@@ -82,6 +90,6 @@ class ItemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def item_params #permit but no require?
-      params.require(:item).permit(:name, :description, :condition, :price, :image, :category_id, :street_address, :user_id)
+      params.require(:item).permit(:name, :description, :condition, :price, :image, :category_id, :street_address, :user_id, :latitude, :longitude)
     end
 end
