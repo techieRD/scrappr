@@ -26,6 +26,7 @@ gem 'geocoder'
 #gmaps
 gem 'gmaps4rails'
 gem 'underscore-rails'
+gem "table_print"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

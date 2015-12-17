@@ -37,5 +37,10 @@
   <%= @item.street_address %>
 </p>
 
+<strong>Map: </strong>
+<div style='width: 800px; padding-bottom: 2em; '>
+  <div id="map" style='width: 800px; height: 400px;'></div>
+</div>
+
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>
