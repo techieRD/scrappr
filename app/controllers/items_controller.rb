@@ -14,8 +14,10 @@ class ItemsController < ApplicationController
 
 
       @hash = Gmaps4rails.build_markers(@item) do |item, marker|
+
         marker.lat item.latitude
         marker.lng item.longitude
+        marker.infowindow item.name
         marker.infowindow item.description
       end
   end
