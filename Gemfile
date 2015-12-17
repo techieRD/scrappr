@@ -20,6 +20,13 @@ gem 'devise'
 #Paperclip
 gem 'paperclip', "~> 4.3"
 
+#geocoder
+gem 'geocoder'
+
+#gmaps
+gem 'gmaps4rails'
+gem 'underscore-rails'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
