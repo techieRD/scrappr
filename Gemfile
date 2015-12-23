@@ -35,6 +35,9 @@ gem 'gmaps4rails'
 gem 'underscore-rails'
 gem "table_print"
 
+#windowsPORT
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
