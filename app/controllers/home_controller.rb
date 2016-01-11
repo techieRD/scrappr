@@ -5,9 +5,12 @@ class HomeController < ApplicationController
     @items = Item.all
 
 	    @hash = Gmaps4rails.build_markers(@items) do |item, marker|
+
+	      item_link = view_context.link_to item.name, item_path(item)
+	      
 	      marker.lat item.latitude
 	      marker.lng item.longitude
-	      marker.infowindow item.description
+	      marker.infowindow "<div class = 'scrapprbox'> <u>#{item_link}</u><br><i>#{item.description}</i></div>"
 	    end
 	  end
 
@@ -15,5 +18,8 @@ class HomeController < ApplicationController
   
   end
 
+  def gmaps4rails_infowindow
+     
+  end
 
 end
